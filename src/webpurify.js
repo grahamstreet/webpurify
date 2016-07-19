@@ -39,7 +39,7 @@ export default class WebPurify {
     };
 
     this.request_base = {
-      host: endpoints[this.options.endpoint],
+      host: endpoints[this.options.endpoint] || this.options.endpoint,
       path: rest_path
     };
 
